@@ -1,0 +1,86 @@
+/* Base Desktop Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul.nav-menu {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+}
+
+nav ul.nav-menu li {
+  margin: 0 15px;
+}
+
+nav ul.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  padding: 20px;
+}
+
+.main-content {
+  flex: 3;
+  margin-right: 20px;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ✅ Mobile-Friendly Styles */
+@media (max-width: 768px) {
+  nav ul.nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .main-content {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  body {
+    font-size: 90%;
+  }
+
+  header, footer {
+    padding: 15px;
+  }
+
+  .sidebar {
+    padding: 15px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
